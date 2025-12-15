@@ -19,4 +19,15 @@ input {
     border: none;
 }
 
+.to-do {
+    background-color: gray;
+}
+
+.in-progress{
+    background-color: yellow;
+}
+
+.done {
+    background-color: greenyellow;
+}
 

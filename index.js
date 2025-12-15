@@ -15,11 +15,18 @@ button.addEventListener("click", () => {
 
 
     const alert = document.getElementById("alert");
-   // alert.remove();
+    // alert.remove();
     //Se le añade un estado a la tarea agragada "Por empezar, En progreso y Finalizado"
-    const option  = options.value;
-    console.log(option);
-    
+    const option = options.value;
+
+    // Esta función es para verificar en que estado esta el selector
+    if (option === "to-do") {
+        div.classList.add("to-do");
+    } else if (option === "in-progress") {
+        div.classList.add("in-progress");
+    } else {
+        div.classList.add("done")
+    }
 
 
 })
