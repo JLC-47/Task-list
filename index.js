@@ -20,12 +20,13 @@ button.addEventListener("click", () => {
     const alert = document.getElementById("alert");
     //Se le añade un estado a la tarea agragada "Por empezar, En progreso y Finalizado"
     const option = options.value;
-
+    //creamos un contenedor para guardar la informacion en columnas diferentes
     let container;
     
     // Esta función es para verificar en que estado esta el selector
     if (option === "to-do") {
         div.classList.add("to-do");
+        // guardamos el valor obtenido en las columnas creadas
         container = document.getElementById("to-do");
     } else if (option === "in-progress") {
         div.classList.add("in-progress");
