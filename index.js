@@ -13,12 +13,10 @@ button.addEventListener("click", () => {
     task_progres.appendChild(div);
     div.textContent = task_value;   // Se agrega el texto al body
 
-
     const alert = document.getElementById("alert");
-    // alert.remove();
     //Se le añade un estado a la tarea agragada "Por empezar, En progreso y Finalizado"
     const option = options.value;
-
+    
     // Esta función es para verificar en que estado esta el selector
     if (option === "to-do") {
         div.classList.add("to-do");
@@ -27,7 +25,8 @@ button.addEventListener("click", () => {
     } else {
         div.classList.add("done")
     }
-
+    
+    alert.remove();
 
 })
 

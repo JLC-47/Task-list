@@ -10,16 +10,21 @@
 
 <body>
     <div class="contenedor">
-        <!-- Este es el input para poder escribir la tarea que  se quiere registrar -->
-        <input type="text" id="task" placeholder="Escriba una tarea" required >
-        <!-- Selección de estado de la tarea -->
-        <select name="selector" id="options"> 
-            <option value="to-do">Por empezar</option> 
-            <option value="in-progress">En proceso</option>
-            <option value="done">Finalizado</option>
-        </select>
+        <div>
+            <h2>Lista de tareas</h2>
+        </div>
+        <div class="header">
+            <!-- Este es el input para poder escribir la tarea que  se quiere registrar -->
+            <input type="text" id="task" placeholder="Escriba una tarea" required>
+            <!-- Selección de estado de la tarea -->
+            <select name="selector" id="options">
+                <option value="to-do">Por empezar</option>
+                <option value="in-progress">En proceso</option>
+                <option value="done">Finalizado</option>
+            </select>
+            <button id="add">Agregar</button> <!-- Botón para agregar tareas-->
+        </div>
 
-        <button id="add">Agregar</button> <!-- Botón para agregar tareas-->
     </div>
     <section class="" id="body">
         <p id="alert">Sin agregar tareas</p>

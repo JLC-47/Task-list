@@ -1,33 +1,100 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 18px;
 }
 
-.contenedor {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 5px ;
+
+}
+
+h2 {
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    width: 40vh;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    background-color: #3498db;
+}
+
+.header{
+    display: flex;
     gap: 15px;
-    padding-top: 20px;
+    margin-right: 20px;
 }
 
 input {
     border: none;
+    box-shadow: 0px 2px green;
+    height: 36px;
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+select {
+    height: 36px;
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
 }
 
 .to-do {
-    background-color: gray;
+    background-color: white;
+    border-radius: 6px;
+
 }
 
-.in-progress{
+.in-progress {
     background-color: yellow;
+    border-radius: 6px;
+
 }
 
 .done {
     background-color: greenyellow;
+    border-radius: 6px;
 }
 
+section {
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+
+button {
+    height: 36px;
+    padding: 0 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    background-color: #0d6efd;
+    color: white;
+    cursor: pointer;
+}
+
+.acciones button:hover {
+    background-color: #0b5ed7;
+}
